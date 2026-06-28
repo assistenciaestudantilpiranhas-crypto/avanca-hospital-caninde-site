@@ -1131,29 +1131,43 @@ body.modal-open {
 .signature p { margin: 5px auto; max-width: 720px; }
 
 .footer {
-  background: #061f36;
+  background:
+    linear-gradient(135deg, rgba(0, 166, 166, 0.08), transparent 42%),
+    #061f36;
   color: #fff;
-  padding: 30px clamp(18px, 5vw, 76px);
-  text-align: center;
+  padding: 36px clamp(18px, 5vw, 76px);
 }
 
 .footer strong,
 .footer span,
-.footer p { display: block; margin: 4px auto; }
-.footer span { color: var(--yellow); font-weight: 800; }
-.footer p { color: rgba(255, 255, 255, 0.78); max-width: 900px; }
+.footer p { display: block; margin: 0; }
+.footer strong {
+  color: #fff;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+.footer span {
+  color: var(--yellow);
+  font-weight: 800;
+}
+.footer p {
+  color: rgba(255, 255, 255, 0.74);
+  line-height: 1.55;
+}
 
 .footer-grid {
   display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  grid-template-columns: 1.25fr 1fr 1fr;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1120px;
   text-align: left;
 }
 
-.footer-block strong { margin: 0 0 6px; }
-.footer-block p { margin: 0; max-width: none; }
+.footer-block {
+  display: grid;
+  gap: 6px;
+}
 
 .back-to-top {
   background: var(--green);
