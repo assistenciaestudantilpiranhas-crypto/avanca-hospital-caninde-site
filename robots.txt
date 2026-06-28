@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://avanca-hospital-caninde-site.netlify.app/sitemap.xml

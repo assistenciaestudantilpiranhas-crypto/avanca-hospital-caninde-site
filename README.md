@@ -9,6 +9,8 @@ index.html
 style.css
 script.js
 netlify.toml
+robots.txt
+sitemap.xml
 assets/
   brasao_caninde.png
   favicon.svg
@@ -30,11 +32,16 @@ Depois acesse `http://localhost:8000`.
 
 O site é estático e compatível com publicação no Netlify. O arquivo `netlify.toml` publica a raiz do projeto.
 
+A URL pública provisória usada nas tags `og:url`, `canonical` e no `sitemap.xml` é `https://avanca-hospital-caninde-site.netlify.app/`. Quando a URL definitiva do Netlify ou um domínio próprio forem definidos, essa URL deve ser substituída nos metadados e arquivos de indexação.
+
 ## Identidade e compartilhamento
 
 - `assets/favicon.svg` é o favicon provisório do site Avança Hospital Canindé.
 - `assets/og-avanca-hospital.svg` é a imagem provisória de compartilhamento.
 - O `index.html` possui SEO básico, Open Graph e Twitter Card.
+- O `index.html` possui URL canônica provisória apontando para `https://avanca-hospital-caninde-site.netlify.app/`.
+- `robots.txt` permite a indexação do site e referencia o sitemap provisório.
+- `sitemap.xml` lista a página inicial publicada na URL provisória.
 - Futuramente esses arquivos podem ser substituídos por versões oficiais da marca.
 - O site é estático e compatível com publicação no Netlify.
 - O Avança Hospital Canindé é um programa técnico institucional, não um sistema com login.
